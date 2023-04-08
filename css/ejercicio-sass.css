@@ -50,6 +50,10 @@ main {
   color: #fff;
 }
 
+.perfil__minibio {
+  margin: 0 auto;
+  padding-top: 20px;
+}
 .estadistica--perfil {
   display: flex;
   width: 50%;
@@ -101,11 +105,6 @@ main {
   text-transform: uppercase;
   font-size: 12px;
   font-family: "Oswald", sans-serif;
-}
-
-.perfil__minibio {
-  margin: 0 auto;
-  padding-top: 20px;
 }
 
 /*# sourceMappingURL=ejercicio-sass.css.map */
