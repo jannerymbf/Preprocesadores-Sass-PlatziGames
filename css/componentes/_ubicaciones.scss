@@ -17,6 +17,7 @@
 		font-weight: 600;
 		font-size: 20px;
 		font-family: $Fuente2;
+    color: get-opacity($color-primario, .50);
 	}
 	h3 {
 		text-transform: uppercase;

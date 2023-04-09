@@ -18,6 +18,12 @@ $color-variacion: #3f579a;
   background-color: $color-claro;
 }
 
+//Los funciones y los mixins son parcecidos. La diferencia es que los mixins aplican los estilos tal y como fue seteado, pero en el caso de las funciones puedes setearlas para que ingreses los valores según los necesites.
+// Declarando funciones
+@function get-opacity($color, $nivel) {
+  @return rgba($color, $nivel);
+}
+
 * {
 	box-sizing: border-box;
 }

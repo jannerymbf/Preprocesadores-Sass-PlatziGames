@@ -1,6 +1,7 @@
+//Acá ya no es necesario agregar el subguion de cada uno de los módulos porque solamente se quiere que se compile en un solo css
 @import "componentes/globales"; //Primero se debe caragr esto porque este contiene variables
 @import "componentes/perfiles";
 @import "componentes/estadisticas";
 @import "componentes/ubicaciones";
-
+@import "componentes/galerias";
 
