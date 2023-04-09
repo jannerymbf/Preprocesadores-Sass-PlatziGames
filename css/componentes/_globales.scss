@@ -18,10 +18,26 @@ $color-variacion: #3f579a;
   background-color: $color-claro;
 }
 
-//Los funciones y los mixins son parcecidos. La diferencia es que los mixins aplican los estilos tal y como fue seteado, pero en el caso de las funciones puedes setearlas para que ingreses los valores según los necesites.
+// Mixin con condicional
+@mixin titulos($fuente) {
+  font-family: $fuente;
+   @if $fuente == $Fuente2 {
+        text-transform: uppercase;
+   } 
+}
+
+// Los funciones y los mixins son parcecidos. La diferencia es que los mixins aplican los estilos tal y como fue seteado, pero en el caso de las funciones puedes setearlas para que ingreses los valores según los necesites.
 // Declarando funciones
 @function get-opacity($color, $nivel) {
   @return rgba($color, $nivel);
+}
+
+// Loops: no es necesario llamarlos. Con esto es suficiente
+@each $header, $size in (h1: 30px, h2: 25px, h3: 20px) {
+  #{$header} {
+    font-size: $size;
+    margin: 0;
+  }
 }
 
 * {
@@ -30,7 +46,7 @@ $color-variacion: #3f579a;
 
 body {
 	margin: 0;
-	font-family: $Fuente1;
+	@include titulos($Fuente1)
 }
 
 main {
